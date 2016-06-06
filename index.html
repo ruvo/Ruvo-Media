@@ -1,252 +1,204 @@
 <html>
-   <head>
-   <title>Ruvo - Media Design Services</title>
-  
-	
-<!-- BOOTSTRAP iNCLUDE -->
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+<head>
+          <title>Ruvo - Media Design Services</title>
+          <!--  JQUERY  -->
+            <script type='text/javascript' src='js/jquery.js'></script>
+          <!-- BOOTSTRAP iNCLUDE -->
+            <link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.css">
+            <link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap-theme.css">
+          <!--  GOOGLE FONTS  -->
+            <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Seaweed+Script' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+          <!-- CSS Styling  -->
+            <link href='css/Ruvo.css' rel='stylesheet' type='text/css'>
+          <!--  MY JAVASCRIPT THAT STARTS AT RUNTIME  -->
+            <!-- LOAD THIS SCRIPT EXTERNALLY RATHER..  -->
+                    <script type='text/javascript'>
+                               /*
+                                // Keeps App Body Just Below the HEader..
+                                var position_AppBody = function(){
+                                ///  Get Header Height
+                                var headerHeight = $('#myIMG1').height();
+                                ///  Get Header Top Offset Margin
+                                // get current value of css attribute top
+                                var topMarginOffset = $('#myIMG1').css('top');
+                                // parse string value
+                                var parsed = topMarginOffset.split('px');
+                                // redefine post parsed
+                                topMarginOffset = parsed[0];
+                                // Turn from string to number
+                                topMarginOffset = parseFloat( topMarginOffset );
+                                /// Do Addition to find appBody Desired height
+                                var newAppBodyPosition = headerHeight + topMarginOffset + 65;
+                                /// Position appBody
+                                $('#appBody').css({
+                                top: newAppBodyPosition,
+                                });
+                                };
+                                //// HANDLE NAVIGATION BUTTON CLICKS
+                                var handle_RevoNavigation_Clicking = function(){
+                                $('.ruvo_navi_button').unbind('click').bind('click', function(event){
+                                var buttonText = $(this).text();
+                                alert('Clicked Button: ' + buttonText);
+                                });
+                                };
+                                /// Handle Resizing the WIndow
+                                $(window).resize(function(event){
+                                position_AppBody();
+                                });
+                                //// At Start of the progam call this start up function
+                                $(document).ready(function(event){
+                                // Make Sure app Body is Positioned right, at start of the app...
+                                position_AppBody();
+                                // Bind Button Clicking Events
+                                handle_RevoNavigation_Clicking();
+                                });
+                                */
+                    </script>
 
-<!--  GOOGLE FONTS  -->
-  <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Seaweed+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-
-<!-- CSS Styling  -->
-   <link href='Ruvo.css' rel='stylesheet' type='text/css'>
-
-<!--  JQUERY  -->
-
-
-<!--  MY JAVASCRIPT THAT STARTS AT RUNTIME  -->
-  </head>
-  <body>
-
-       <!-- My Title for the app -->
-
-  
-
-  <div id='imageContainer' class="container">
-    <img id='I7' src='I7.png'>
-    <img id='myIMG1' src='Logo.png' class='img-rounded'>
-    <img id='I6' src='I6.png' class='img-rounded'>
-    <img id='I3' src='I3.jpg'>
-    <img id='ableImg' src='able.png'>
-    <img id='I4' src='I4.jpg'>
-    <img id='I5' src='I5.jpg'>
-    <img id='rec'src='rec.jpg'>
-    <img id='I8' src='I8.jpg' class='img-rounded'>
-    <img id='I9' src='I9.jpg' class='img-rounded'>
-    <img id='iLogo' src='iLogo.jpg'>
-  </div>
-   
- 
-
-
-
-
-
-    <div id='myNavi' class='container'>
-        
-        <div class='ruvo_navi_button col-xs-2'>
-          <a href="index.html" target="_self">About </a>
-        </div>
+</head>
+<body>
     
-        <div class='ruvo_navi_button col-xs-2'>
-          <a href="page2.html" target="_self">Productions </a> 
-        </div>  
-    
-        <div class='ruvo_navi_button col-xs-2'> 
-          <a href="page3.html" target="_self">Services </a>
+    <!--   TOP NAVIGATION   -->
+        <div id='myNavi' class='container'>    
+              <!-- Home Page Button-->
+                  <div class='ruvo_navi_button col-xs-2'>
+                    <a href="index.html" target="_self">About </a>
+                  </div>
+              <!-- Productions Button-->
+                  <div class='ruvo_navi_button col-xs-2'>
+                    <a href="page2.html" target="_self">Productions </a>
+                  </div>
+              <!-- Services Button-->
+                  <div class='ruvo_navi_button col-xs-2'>
+                    <a href="page3.html" target="_self">Services </a>
+                  </div>
+              <!-- Software Button-->
+                  <div class='ruvo_navi_button col-xs-2'>
+                    <a href="page4.html" target="_self">Software </a>
+                  </div>
+              <!-- Pricing Button-->
+                  <div class='ruvo_navi_button col-xs-2'>
+                    <a href="page5.html" target="_self">Pricing </a>
+                  </div>
+              <!-- Contact Button-->
+                  <div class='ruvo_navi_button col-xs-2'>
+                    <a href="page6.html" target="_self">Contact Us </a>
+                  </div>
         </div>
-        
-        <div class='ruvo_navi_button col-xs-2'>
-          <a href="page4.html" target="_self">Software </a>
-        </div>
-        
-        <div class='ruvo_navi_button col-xs-2'> 
-          <a href="page5.html" target="_self">Pricing </a>
-        </div>
-        
-        <div class='ruvo_navi_button col-xs-2'> 
-          <a href="page6.html" target="_self">Contact Us </a>
-        </div>
-
-    </div>
-        
-        
-       <div id='myTitle'>
+    <!-- TITLE IN GREEN BG --> 
+          <div id='myTitle'>
               RUVO
-       </div>
-       <!-- App Body -->
-       <div id='appBody'>
+          </div>   
     
-        <div class='container ruvoPage'>
-          <br></br>
-          <div class='col-xs-12 ruvoPage_title'>
-              About
-          </div>
-            
-            <br></br>
 
-                <!-- Item 1 -->
-                <div class='col-xs-12 col-md-3'>
-                      At Ruvo we provide only the best Intelligent Media Design. Our key skills and expertise are in Sound Design, Web Design and Logo Design. We've worked with clients all over the world to deliver the best results in the Media Industry. Innovation and productivity is what makes Ruvo one of the top Media Design companies and we like to maintain good communication with clients when they use our service.
-                    <br></br>
-                    <p> Contact us right away to get a quote for your project</p>
+    
+    <!-- App Body -->
+        <div id='appBody'>  
 
-                </div>
-                
-                <!--  ITEM 2-->
-                <div class='col-xs-12 col-md-3'>
-                     <p>We have had over 300 clients since the business started in 2015 and we have recieved great client feedback.</p> 
-                     
-                     'At Ruvo I received excellent client service. I wanted to add some cinematic sounds to my commercial and the team at Ruvo delivered what I asked for and more. I recommend this business to anyone looking for top-notch media design' 
-                     <br></br>
-                     Barbara, Arvid Ltd    
-                </div>  
-                  
+          <!--  Images At the Top    -->
+              <div class='container'>
+                    <div class='col-xs-4'>
+                          <img class='topImages' src='img/I5.jpg' />
+                    </div>
+                    
+                    <div class='col-xs-4'>
+                          <img class='topImages' src='img/I5.jpg' />
+                    </div>
+
+                    <div class='col-xs-4'>
+                          <img class='topImages' src='img/I5.jpg' />
+                    </div>
+
+                    <br/>
+              </div>
+
+                <!--
+                    <div id='imageContainer' class="container">
+                      <img id='I7' src='img/I7.png'>
+                      <img id='myIMG1' src='img/Logo.png' class='img-rounded'>
+                      <img id='I6' src='img/I6.png' class='img-rounded'>
+                      <img id='I3' src='img/I3.jpg'>
+                      <img id='ableImg' src='img/able.png'>
+                      <img id='I4' src='img/I4.jpg'>
+                      <img id='I5' src='img/I5.jpg'>
+                      <img id='rec'src='img/Rec.jpg'>
+                      <img id='I8' src='img/I8.jpg' class='img-rounded'>
+                      <img id='I9' src='img/I9.jpg' class='img-rounded'>
+                      <img id='iLogo' src='img/iLogo.jpg'>
+                    </div>
+                -->
+
+          <!-- MAIN CONTENT AREA  -->
+              <div class='container ruvoPage'>   <!-- This has border-top  on it -->
+                <!--  PAGE TITLE -->
+                  <div class='col-xs-12 ruvoPage_title'>
+                    About
+                  </div>
+                <!-- Paragraph Part1 -->
+                  <div class='col-xs-12 col-md-3'>
+                        At Ruvo we provide only the best Intelligent Media Design. Our key skills and expertise are in Sound Design, Web Design and Logo Design. We've worked with clients all over the world to deliver the best results in the Media Industry. Innovation and productivity is what makes Ruvo one of the top Media Design companies and we like to maintain good communication with clients when they use our service.
+                        <br></br>
+                        <p> Contact us right away to get a quote for your project</p>
+                  </div>
+                <!--  Paragraph Part2-->
+                  <div class='col-xs-12 col-md-3'>
+                        <p>We have had over 300 clients since the business started in 2015 and we have recieved great client feedback.</p>
+                        
+                        'At Ruvo I received excellent client service. I wanted to add some cinematic sounds to my commercial and the team at Ruvo delivered what I asked for and more. I recommend this business to anyone looking for top-notch media design'
+                        <br></br>
+                        Barbara, Arvid Ltd
+                  </div>
                 <!-- IMAGES LIST  -->
-                 <div class='col-xs-12 col-md-6'>
-                        <div>
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'> 
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'> 
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'> 
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'> 
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'>
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'>
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'>
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'>
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'>
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'>
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'>
-                            <img class='col-xs-12 col-md-4' src='I3.jpg' width='10px' height='auto'>
-                            
+                  <div class='col-xs-12 col-md-6'>
+                      <div>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/I7.png' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/I6.png' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/I3.jpg' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/able.png' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/I4.jpg' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/I5.jpg' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/Rec.jpg' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/I8.jpg' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/I9.jpg' width='10px' height='auto'>
+                            <img class='col-xs-12 col-sm-6 col-md-4' src='img/iLogo.jpg' width='10px' height='auto'>  
 
-                        </div>
-                 </div>
+                      </div>
+                  </div>
+              </div> 
+        </div>
 
-                 <!--  Next Item I want on this Page   -->
-                 <div class='col-xs-12'>
-                        
-                 </div>
-
-                 <div class='col-xs-12'>
-                        
-                 </div>
-
-                 <div class='col-xs-12'>
-                        
-                 </div>
-                 <!-- -->
-                 <div class='col-xs-12'>
-                        <br>
-                        <br>
-                        <br>
-                 </div>
-            </div>
-       </div>
-
-
-
-
-<!-- Social Media + Footer -->
-<div class="container">
-    <div class="navbar navbar-fixed-bottom">
-        <div class="collapse navbar-collapse vertimid">            
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <img src="fbicon.png"
-                                 alt="Facebook Icon"
-                                 style="width: 100%; height: auto; max-width: 32px">
-                        </li>
-                        <li>
-                            <img src="twitter.png"
-                                 alt="Twitter Icon"
-                                 style="width: 100%; height: auto; max-width: 32px">
-                        </li>
-                        <li>
-                            <img src="linkedin.png"
-                                 alt="Linkedin Icon"
-                                 style="width: 100%; height: auto; max-width: 32px">
-                        </li>
-                        <li>
-                            <img src="youtube.png"
-                                 alt="Youtube Icon"
-                                 style="width: 100%; height: auto; max-width: 32px">
-                        </li>
-                        <li>
-                            <img src="google.png"
-                                 alt="Google Icon"
-                                 style="width: 100%; height: auto; max-width: 32px">
-                        </li>
-                         <li>
-                            <img src="soundcloud.png"
-                                 alt="Soundcloud Icon"
-                                 style="width: 100%; height: auto; max-width: 32px">
-                        </li>
-                        <li id='arr'> All rights reserved Ruvo&copy</li>
-                    </ul>
+    <!-- Social Media + Footer -->
+        <div id='website_footer' class="container">
+                <div class='col-xs-10'>
+                      <div class='container'>
+                          <div class="col-xs-1 col-md-2">
+                                <img src="img/fbicon.png" alt="Facebook Icon" style="width: 100%; height: auto; max-width: 32px">
+                          </div>
+                          <div class="col-xs-1 col-md-2">
+                                <img src="img/twitter.png" alt="Twitter Icon" style="width: 100%; height: auto; max-width: 32px">
+                          </div>
+                          <div class="col-xs-1 col-md-2">
+                                <img src="img/linkedin.png" alt="Linkedin Icon" style="width: 100%; height: auto; max-width: 32px">
+                          </div>
+                          <div class="col-xs-1 col-md-2">
+                                <img src="img/youtube.png" alt="Youtube Icon" style="width: 100%; height: auto; max-width: 32px">
+                          </div>
+                          <div class="col-xs-1 col-md-2">
+                                <img src="img/google.png" alt="Google Icon" style="width: 100%; height: auto; max-width: 32px">
+                          </div>
+                          <div class="col-xs-1 col-md-2">
+                                <img src="img/soundcloud.png" alt="Soundcloud Icon" style="width: 100%; height: auto; max-width: 32px">
+                          </div>
+                      </div>
                 </div>
-            </div>
-        </div>            
-    </div>
-</div>
 
+                <div class='col-xs-2' id='allRightsReserved'>
+                     All rights reserved Ruvo&copy
+                </div>
+        </div>
 
-
- <!--div class="navbar navbar-fixed-bottom">
-   All right reserved Ruvo&copy
-</div>   
-<script type='text/javascript' src='jquery.js'></script>
-  <script type='text/javascript' src='bootstrap.js'></script>
-  <script type='text/javascript'>
-    // Keeps App Body Just Below the HEader..  
-      var position_AppBody = function(){
-        ///  Get Header Height 
-          var headerHeight = $('#myIMG1').height();
-        ///  Get Header Top Offset Margin
-          // get current value of css attribute top
-          var topMarginOffset = $('#myIMG1').css('top');
-          // parse string value
-            var parsed = topMarginOffset.split('px');
-          // redefine post parsed
-            topMarginOffset = parsed[0];
-          // Turn from string to number 
-            topMarginOffset = parseFloat( topMarginOffset );
-
-        /// Do Addition to find appBody Desired height
-          var newAppBodyPosition = headerHeight + topMarginOffset + 65;
-
-        /// Position appBody
-          $('#appBody').css({
-            top: newAppBodyPosition,
-          });
-      };
-
-      //// HANDLE NAVIGATION BUTTON CLICKS  
-      var handle_RevoNavigation_Clicking = function(){
-        $('.ruvo_navi_button').unbind('click').bind('click', function(event){
-          var buttonText = $(this).text();
-          alert('Clicked Button: ' + buttonText);
-        });
-      };
-
-      /// Handle Resizing the WIndow
-      $(window).resize(function(event){
-          position_AppBody();
-      });
-
-      //// At Start of the progam call this start up function 
-      $(document).ready(function(event){
-        // Make Sure app Body is Positioned right, at start of the app...  
-          position_AppBody();  
-        // Bind Button Clicking Events
-          handle_RevoNavigation_Clicking();
-      });
-  </script>
-  </body> 
+</body>
 </html>

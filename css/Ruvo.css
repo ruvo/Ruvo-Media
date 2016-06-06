@@ -8,7 +8,7 @@ body {
 
 /*  Css Comment  */
 .ruvoPage {
-	margin-top : 40px;
+    margin-top : 7px;
     border-top : #aeaeae solid 3px;
 }
 
@@ -29,10 +29,16 @@ body {
 
 }
 
+
+.topImages{
+    width : 100%;
+    height : auto;
+}
+
 #appBody {
 	position: absolute;
 	z-index: 500;
-	top : 300px;
+	top : 99px;
 	width : 100%;
 	background : #FFF;
 	color : #789;
@@ -53,6 +59,18 @@ body {
 	top:8px;
 }
 
+#website_footer {
+    position : absolute;
+    bottom : 0px;
+    height : 55px;
+    width : 100%;
+    padding-top : 9px;
+    background: #626;
+}
+
+#allRightsReserved{
+    padding-top : 10px;
+}
 
 #arr{
 	left:420px;
@@ -76,7 +94,7 @@ body {
 #myTitle {
     position: absolute;
 	z-index: 500;
-    top : 33px;
+    top : 31px;
     width: 100%;
 	opacity : 3;  
     color : #000;
