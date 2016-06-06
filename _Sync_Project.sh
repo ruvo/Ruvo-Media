@@ -1,16 +1,20 @@
 #!/bin/bash
 
-echo '\n--> Pulling and Changes Made by Other Team...'
+echo ' '
+echo '--> Pulling and Changes Made by Other Team...'
 git pull
 
-echo '\n --> Adding All Changes That I Made... '
+echo ' '
+echo '--> Adding All Changes That I Made... '
 git add --all
 
-
-echo '\n--> Commiting My Changes'
+echo ' '
+echo '--> Commiting My Changes'
 git commit -m 'General Update Commit..'
 
-echo '\n-->  Syncing with gitHub.com   '
+
+echo ' '
+echo '-->  Syncing with gitHub.com   '
 git push
 
 
