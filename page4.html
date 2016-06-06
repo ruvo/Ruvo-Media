@@ -1,0 +1,198 @@
+<html>
+   <head>
+   <title>Ruvo - Media Design Services</title>
+  
+	
+<!-- BOOTSTRAP iNCLUDE -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+
+<!--  GOOGLE FONTS  -->
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Seaweed+Script' rel='stylesheet' type='text/css'>
+
+
+<!-- CSS Styling  -->
+  
+  <link href='Ruvo.css' rel='stylesheet' type='text/css'>
+
+<!--  JQUERY  -->
+
+
+<!--  MY JAVASCRIPT THAT STARTS AT RUNTIME  -->
+
+  </head>
+  <body>
+
+       <!-- My Title for the app -->
+
+
+	<div id='imageContainer'>
+		<img id='myIMG1' src='Logo.png' class='img-rounded'>
+		<img id='ableImg2' src='able.png'>
+		<img id='ai' src='ai.jpg'>
+		<img id='html' src='html.jpg'>
+		<img id='js' src='js.png'>
+		<img id='I6' src='I6.png' class='img-rounded'>
+    	<img id='I7' src='I7.png'>
+        <img id='iLogo' src='iLogo.jpg'>
+	</div>
+	    
+
+
+
+       <div id='myNavi' class='container'>
+   			<div class='ruvo_navi_button col-xs-2'>
+		<a href="index.html" target="_self">About </a>
+   	</div>
+   	
+   	
+   	<div class='ruvo_navi_button col-xs-2'>
+   		<a href="page2.html" target="_self">Productions </a> 
+   	</div>	
+   	
+   	<div class='ruvo_navi_button col-xs-2'> 
+		<a href="page3.html" target="_self">Services </a>
+	</div>
+   			
+   	<div class='ruvo_navi_button col-xs-2'>
+   		<a href="page4.html" target="_self">Software </a>
+   	</div>
+   			
+   	<div class='ruvo_navi_button col-xs-2'> 
+   		<a href="page5.html" target="_self">Pricing </a>
+   	</div>
+   			
+   	<div class='ruvo_navi_button col-xs-2'>  
+       	<a href="page6.html" target="_self">Contact Us </a>
+     </div>
+  </div>
+				
+				
+       <div id='myTitle'>
+   			Software
+       </div>
+      
+
+		  <!-- end of sample page -->
+		
+		<!-- Media -->
+     		 <div id='appBody'>
+     		 <div class='container ruvoPage'>
+     			
+  		  	    <div class='col-xs-6'>
+  		  			<p>At Ruvo we use Ableton, Logic Pro and Pro Tools to compose, arrange, mix and edit our audio to deliver top-notch results. We have expert sound designers that create audio specific to client needs. </p> 
+				<img id='I10' src='I10.jpg'>
+                    <br></br>
+  		  			<p>We use HTML, CSS and Javascript to build our websites. We have a team of innovative web-designers who are commited to delivering professional websites. </p>
+  		  			
+  		  			
+  		  		 
+
+  		  		</div>
+  		  		
+  		  		<div class='col-xs-6'>
+  		  			<p> Adobe Illustrator is the main platform for most of our logo design. You can give your business the branding it needs by getting in touch with our great team of graphic designers</p>
+  		  			<br></br>
+  		  			<p>'I was amazed at the results that I got at Ruvo. I started out by requesting a simple logo design and the designers at Ruvo went the extra mile and built me a full custom-built website to kick-start my business. I would recommend this company to anyone looking to add that creative spark to their business'
+				
+  		  		    <p> John, iSound</p>
+  		  		</div>
+  		  		
+  		  		<div class='col-xs-6'>
+  		  		</div>
+			
+		
+      </div>
+     </div>
+     <div class="container">
+    <div class="navbar navbar-fixed-bottom">
+        <div class="collapse navbar-collapse vertimid">            
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <img src="fbicon.png"
+                                 alt="Facebook Icon"
+                                 style="width: 100%; height: auto; max-width: 32px">
+                        </li>
+                        <li>
+                            <img src="twitter.png"
+                                 alt="Twitter Icon"
+                                 style="width: 100%; height: auto; max-width: 32px">
+                        </li>
+                        <li>
+                            <img src="linkedin.png"
+                                 alt="Linkedin Icon"
+                                 style="width: 100%; height: auto; max-width: 32px">
+                        </li>
+                        <li>
+                            <img src="youtube.png"
+                                 alt="Youtube Icon"
+                                 style="width: 100%; height: auto; max-width: 32px">
+                        </li>
+                        <li>
+                            <img src="google.png"
+                                 alt="Google Icon"
+                                 style="width: 100%; height: auto; max-width: 32px">
+                        </li>
+                         <li>
+                            <img src="soundcloud.png"
+                                 alt="Soundcloud Icon"
+                                 style="width: 100%; height: auto; max-width: 32px">
+                        </li>
+                        <li id='arr'> All rights reserved Ruvo&copy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>            
+    </div>
+	<script type='text/javascript'>
+		// Keeps App Body Just Below the HEader..  
+  		var position_AppBody = function(){
+  			///  Get Header Height 
+  				var headerHeight = $('#myIMG1').height();
+  			///  Get Header Top Offset Margin
+  				// get current value of css attribute top
+  				var topMarginOffset = $('#myIMG1').css('top');
+  				// parse string value
+  					var parsed = topMarginOffset.split('px');
+  				// redefine post parsed
+  					topMarginOffset = parsed[0];
+  				// Turn from string to number 
+  					topMarginOffset = parseFloat( topMarginOffset );
+
+  			/// Do Addition to find appBody Desired height
+  				var newAppBodyPosition = headerHeight + topMarginOffset + 65;
+
+  			/// Position appBody
+  				$('#appBody').css({
+  					top: newAppBodyPosition,
+  				});
+  		};
+
+  		//// HANDLE NAVIGATION BUTTON CLICKS 	
+  		var handle_RevoNavigation_Clicking = function(){
+  			$('.ruvo_navi_button').unbind('click').bind('click', function(event){
+  				var buttonText = $(this).text();
+  				alert('Clicked Button: ' + buttonText);
+  			});
+  		};
+
+  		/// Handle Resizing the WIndow
+  		$(window).resize(function(event){
+  				position_AppBody();
+  		});
+
+  		//// At Start of the progam call this start up function 
+  		$(document).ready(function(event){
+  			// Make Sure app Body is Positioned right, at start of the app...  
+  				position_AppBody();  
+  			// Bind Button Clicking Events
+  				handle_RevoNavigation_Clicking();
+  		});
+  </script>
+	<script type='text/javascript' src='jquery.js'></script>
+	<script type='text/javascript' src='bootstrap.js'></script>
+  </body> 
+</html>
